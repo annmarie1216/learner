@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pearson-ux.github.io/learner/patterns/installation/</guid>
-      <description>Cupper is built using the static site engine, Hugo, and NPM. The codebase is available to download on Github. Let&amp;rsquo;s get everything installed step-by-step.
+      <description>Learner is built using the static site engineHugo and NPM. It was heavily inspired by Cupper, a Hugo theme developed by The Paciello Group.
 Install Hugo First you need to install Hugo globally.
 OSX users If you are a Mac user and have Homebrew on your system, installing Hugo is simple:
 brew install hugo Alternatively, you can manually install Hugo from a package. You can verify the installation was successful by typing:</description>
