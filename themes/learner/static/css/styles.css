@@ -62,7 +62,8 @@ figure p img {
 [data-expands]:focus svg,
 .patterns a:focus .text,
 [for="themer"] :focus + [aria-hidden] {
-    outline: 0.4rem solid #999;
+outline: 0.2rem solid #1977D4;
+   outline-offset: 0.2rem;
 }
 a {
   outline-offset: 0.2rem;
