@@ -1,18 +1,14 @@
 +++
 title = "Installation"
 weight = 1
-markup = "mmark"
 +++
 
 **Cupper** is built using the static site engine, [Hugo](https://gohugo.io/), and NPM. The codebase is available to download on Github. Let's get everything installed step-by-step.
-
-<p>AAA</p>
 
 ## Install Hugo
 
 First you need to install Hugo globally.
 
-{.gr-h3}
 ### OSX users
 
 If you are a Mac user and have [Homebrew](https://brew.sh/) on your system, installing Hugo is simple:
@@ -23,18 +19,17 @@ Alternatively, you can manually [install Hugo from a package](https://github.com
 
 {{<cmd>}}hugo version{{</cmd>}}
 
-{.gr-h3}
 ### Windows users
 
 Installing on Windows is a little more involved than on OSX. The authors of Hugo provide [a guide](https://gohugo.io/tutorials/installing-on-windows/) with instructions for technical and less technical users.
 
 It's also best you install a Windows Subsystem for running Linux, and therefore [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (**Cupper** incorporates some bash commands in its scripts). [Microsoft offer a complete guide](https://msdn.microsoft.com/en-gb/commandline/wsl/install_guide).
 
-{.gr-h2}
+
 ## Install Node & NPM
 
 It is likely you already have Node and NPM installed on your system. If so, you can skip this step. Otherwise, [refer to NPM's own guide](https://docs.npmjs.com/getting-started/installing-node), which includes a video tutorial.
-{.gr-h2}
+
 ## Get the files
 
 **Cupper** is hosted on Github. To start using it, you'll need to get the files from there. If you are comfortable with the command line, just fork the [github.com/ThePacielloGroup/cupper](https://github.com/ThePacielloGroup/cupper) repository, then do a `git clone` to your local system. Replace `[your username]` in the following:
