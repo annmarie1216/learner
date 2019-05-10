@@ -19,7 +19,7 @@ template {
   display: none !important;
 }
 * + * {
-    margin-top: 4.95rem;
+    margin-top: 2.95rem;
 }
 br,
 dt,
@@ -302,7 +302,7 @@ caption {
 }
 .intro-and-nav {
     font-size: 1.76rem;
-    width: 32.5rem;
+    width: 32.7rem;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -366,7 +366,7 @@ caption {
     margin-top: 1.65rem;
 }
 .patterns li {
-    font-size: 1.3em;
+    font-size: 1.22em;
     line-height: 1.125;
     list-style: none;
 }
