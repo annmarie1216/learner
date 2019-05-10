@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+$https://github.com/pearson-ux/learner.git"
+    "url": "git+https://github.com/pearson-ux/learner.git"
   },
   "bugs": {
     "url": "https://github.com/pearson-ux/learner/issues"
