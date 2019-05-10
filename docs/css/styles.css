@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 html {
-    font-size: calc(2em + 0.33vw);
+
     line-height: 1.5;
     color: #111;
     background-color: #fefefe;
@@ -322,6 +322,9 @@ caption {
   flex: 1 1 auto;
 }
 .logo {
+    display: block;
+    margin:  0 auto;
+    width: 144px;
     border: 0;
 }
 .logo img {
