@@ -3,39 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://pearson-ux.github.io/learner/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/print-version/</loc>
+    <loc>https://pearson-ux.github.io/learner/patterns/pattern/</loc>
   </url>
   
   <url>
-    <loc>/patterns/pattern/</loc>
-  </url>
-  
-  <url>
-    <loc>/patterns/</loc>
+    <loc>https://pearson-ux.github.io/learner/patterns/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://pearson-ux.github.io/learner/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://pearson-ux.github.io/learner/</loc>
   </url>
   
   <url>
-    <loc>/tags/another-tag/</loc>
+    <loc>https://pearson-ux.github.io/learner/print-version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/tags/another-tag/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/example-tag/</loc>
+    <loc>https://pearson-ux.github.io/learner/tags/example-tag/</loc>
     <priority>0</priority>
   </url>
   

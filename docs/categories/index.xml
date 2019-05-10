@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Learner</title>
-    <link>/categories/</link>
+    <link>https://pearson-ux.github.io/learner/categories/</link>
     <description>Recent content in Categories on Learner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pearson-ux.github.io/learner/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
