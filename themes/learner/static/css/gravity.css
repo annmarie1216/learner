@@ -10,18 +10,11 @@ html {
    font-size: calc(100% * 0.625); }
  
  body {
-   font-size: 1.6rem;
-   line-height: 1.5;
-   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-   font-weight: 400; }
- 
- p {
-   font-size: 1.4rem;
-   line-height: 1.42857;
-   font-weight: normal; }
+   font: 1.6rem/1.5 "Open Sans", Arial, Helvetica, sans-serif;
+}
  
  strong {
-   font-size: 1.4rem;
+   font-size: inherit;
    font-weight: 600; }
  
  a {
