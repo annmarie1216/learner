@@ -24,6 +24,6 @@
     {{ if ne .Params.TOC false }}
       {{ partial "toc" . }}
     {{ end }}
-    {{ .Content | replaceRE "<h(2|3)" "<h2 class=\"gr-h$1\"" | safeHTML }}
+    {{ .Content | replaceRE "<h(2|3)" "<h2 class=\"gr-h$1 gr-semi-bold\"" | safeHTML }}
   </main>
 {{ end }}
