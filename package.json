@@ -1,0 +1,30 @@
+{
+  "name": "learner",
+  "version": "0.1.0",
+  "description": "A documentation builder for Pearson.com",
+  "author": "EJ Mason <ej.mason@pearson.com>",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "hugo server -p 3000",
+    "clean": "node lib/clean.js",
+    "build": "node lib/build.js",
+    "update": "node lib/update.js",
+    "a11y": "(npm list pa11y-ci || npm install -g pa11y-ci) && pa11y-ci --sitemap http://localhost:1313/sitemap.xml --config lib/.pa11yci"
+  },
+  "pre-commit": [
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+$https://github.com/pearson-ux/learner.git"
+  },
+  "bugs": {
+    "url": "$https://github.com/pearson-ux/learner/issues"
+  },
+  "homepage": "$https://github.com/pearson-ux/learner#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "sw-precache": "^5.2.0"
+  }
+}

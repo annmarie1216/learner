@@ -1,0 +1,8 @@
+languageCode = "en-us"
+title = "Learner"
+canonifyURLs = true
+theme = "learner"
+publishDir = "docs"
+
+[params]
+  description = "Documentation for Learner, the Pearson documentation site builder, built in Learner"

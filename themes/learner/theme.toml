@@ -1,0 +1,16 @@
+name = "Learner"
+description = "The Pearson UX documentation site builder"
+tags = ["pearson", "pearson-ux", "documentation"]
+min_version = 0.55
+
+[author]
+  name = "EJ Mason / Pearson UX"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  script = "scripts"
+
+[original]
+  name = "Cupper"
+  homepage = "https://github.com/ThePacielloGroup/cupper"
