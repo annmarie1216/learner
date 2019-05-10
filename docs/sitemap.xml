@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://pearson-ux.github.io/learner/categories/</loc>
-    <priority>0</priority>
+    <loc>https://pearson-ux.github.io/learner/patterns/installation/</loc>
   </url>
   
   <url>
-    <loc>https://pearson-ux.github.io/learner/patterns/pattern/</loc>
+    <loc>https://pearson-ux.github.io/learner/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -27,16 +27,6 @@
   
   <url>
     <loc>https://pearson-ux.github.io/learner/print-version/</loc>
-  </url>
-  
-  <url>
-    <loc>https://pearson-ux.github.io/learner/tags/another-tag/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pearson-ux.github.io/learner/tags/example-tag/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://pearson-ux.github.io/learner/patterns/pattern/">
+    <link rel="canonical" href="https://pearson-ux.github.io/learner/patterns/installation/">
     <link rel="shortcut icon" href="https://pearson-ux.github.io/learner/images/favicon.ico" type="image/x-icon">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
@@ -19,7 +19,7 @@
     </style>
     <title>
       
-        My First Pattern File | Learner
+        Installation | Learner
       
     </title>
     
@@ -129,11 +129,11 @@
                   <ul id="patterns-list">
                     
                       <li class="pattern">
-                        <a href="https://pearson-ux.github.io/learner/patterns/pattern/" aria-current="page">
+                        <a href="https://pearson-ux.github.io/learner/patterns/installation/" aria-current="page">
                           <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
                             <use xlink:href="#bookmark"></use>
                           </svg>
-                          <span class="text">My First Pattern File</span>
+                          <span class="text">Installation</span>
                         </a>
                       </li>
                     
@@ -152,36 +152,87 @@
       <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
-      My First Pattern File
+      Installation
     </h1>
-    
-      <div class="tags">
-        <strong aria-hidden="true">Tags: </strong>
-        <ul aria-label="tags">
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              <a href="https://pearson-ux.github.io/learner/tags/example-tag">example tag</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              <a href="https://pearson-ux.github.io/learner/tags/another-tag">another tag</a>
-            </li>
-          
-        </ul>
-      </div>
     
     
       
 
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#install-hugo">
+            Install Hugo
+          </a>
+        </li>
+      
+        <li>
+          <a href="#install-node-npm">
+            Install Node &amp; NPM
+          </a>
+        </li>
+      
+        <li>
+          <a href="#get-the-files">
+            Get the files
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
 
     
-    <p>You can just write <strong>markdown</strong> here. But don&rsquo;t forget there are lots of shortcodes to help you with writing and showing off code too. See <a href="#">the documentation for <strong>Learner</strong> (site TBD)</a> for full details.</p>
+    <p><strong>Cupper</strong> is built using the static site engine, <a href="https://gohugo.io/">Hugo</a>, and NPM. The codebase is available to download on Github. Let's get everything installed step-by-step.</p>
+
+<p>AAA</p>
+
+<h2 id="install-hugo">Install Hugo</h2>
+
+<p>First you need to install Hugo globally.</p>
+
+<h3 id="osx-users" class="gr-h3">OSX users</h3>
+
+<p>If you are a Mac user and have <a href="https://brew.sh/">Homebrew</a> on your system, installing Hugo is simple:</p>
+
+<pre class="cmd"><code>brew install hugo</code></pre>
+
+
+<p>Alternatively, you can manually <a href="https://github.com/gohugoio/hugo/releases">install Hugo from a package</a>. You can verify the installation was successful by typing:</p>
+
+<pre class="cmd"><code>hugo version</code></pre>
+
+
+<h3 id="windows-users" class="gr-h3">Windows users</h3>
+
+<p>Installing on Windows is a little more involved than on OSX. The authors of Hugo provide <a href="https://gohugo.io/tutorials/installing-on-windows/">a guide</a> with instructions for technical and less technical users.</p>
+
+<p>It's also best you install a Windows Subsystem for running Linux, and therefore <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a> (<strong>Cupper</strong> incorporates some bash commands in its scripts). <a href="https://msdn.microsoft.com/en-gb/commandline/wsl/install_guide">Microsoft offer a complete guide</a>.</p>
+
+<h2 id="install-node--npm" class="gr-h2">Install Node &amp; NPM</h2>
+
+<p>It is likely you already have Node and NPM installed on your system. If so, you can skip this step. Otherwise, <a href="https://docs.npmjs.com/getting-started/installing-node">refer to NPM's own guide</a>, which includes a video tutorial.
+</p>
+
+<h2 id="get-the-files" class="gr-h2">Get the files</h2>
+
+<p><strong>Cupper</strong> is hosted on Github. To start using it, you'll need to get the files from there. If you are comfortable with the command line, just fork the <a href="https://github.com/ThePacielloGroup/cupper">github.com/ThePacielloGroup/cupper</a> repository, then do a <code>git clone</code> to your local system. Replace <code>[your username]</code> in the following:</p>
+
+<pre class="cmd"><code>git clone https://github.com/[your username]/cupper.git</code></pre>
+
+
+<p>If the command line is not your thing, use Github's web interface to fork  <a href="https://github.com/ThePacielloGroup/cupper">github.com/ThePacielloGroup/cupper</a> and choose <strong>Open in Desktop</strong> from <strong>Clone or download</strong> (see figure 1, below).</p>
+
+<figure role="group" aria-describedby="caption-4f6ff97ad7397f1735a833534d0e2e4d">
+  
+![The open in desktop option, revealed when clicking clone or download](/images/open_in_desktop.png)
+
+  <figcaption id="caption-4f6ff97ad7397f1735a833534d0e2e4d">
+    The Github web interface
+  </figcaption>
+</figure>
 
 <aside aria-label="note" class="note">
   <div>
@@ -189,10 +240,19 @@
       <use xlink:href="#info"></use>
     </svg>
     
-Here's an example of a note shortcode for adding little "oh and also" notes to your patterns' documentation.
+If you do not have a version of the Github desktop client installed, follow the prompts after clicking **Open in Desktop**.
 
   </div>
 </aside>
+
+<p>While you're in the Github interface, you might as well set up the publishing source for the live site. Choose the Master branch/docs option under <strong>Settings → Github Pages → Source</strong>. See  for more details.</p>
+
+<p>Once you have your local copy of the files, move to the root of that folder and in your terminal run an npm installation:</p>
+
+<pre class="cmd"><code>npm install</code></pre>
+
+
+<p>Now it's time to consult the  pattern.</p>
 
   </main>
 
@@ -211,8 +271,6 @@ Here's an example of a note shortcode for adding little "oh and also" notes to y
     <script src="https://pearson-ux.github.io/learner/js/prism.js"></script>
     <script src="https://pearson-ux.github.io/learner/js/dom-scripts.js"></script>
     
-      
-      <script src="https://momentjs.com/downloads/moment.js"></script>
       
     
   </body>

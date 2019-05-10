@@ -10,23 +10,5 @@
 	<atom:link href="https://pearson-ux.github.io/learner/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>another tag</title>
-      <link>https://pearson-ux.github.io/learner/tags/another-tag/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pearson-ux.github.io/learner/tags/another-tag/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>example tag</title>
-      <link>https://pearson-ux.github.io/learner/tags/example-tag/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pearson-ux.github.io/learner/tags/example-tag/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
