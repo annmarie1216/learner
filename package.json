@@ -20,9 +20,9 @@
     "url": "git+$https://github.com/pearson-ux/learner.git"
   },
   "bugs": {
-    "url": "$https://github.com/pearson-ux/learner/issues"
+    "url": "https://github.com/pearson-ux/learner/issues"
   },
-  "homepage": "$https://github.com/pearson-ux/learner#readme",
+  "homepage": "https://github.com/pearson-ux/learner#readme",
   "devDependencies": {
     "pre-commit": "^1.2.2",
     "sw-precache": "^5.2.1"
