@@ -105,11 +105,9 @@
     <script src="{{ "js/prism.js" | absURL }}"></script>
     <script src="{{ "js/dom-scripts.js" | absURL }}"></script>
     {{ $scripts := .Params.Scripts}}
-    {{ if $scripts }}
       {{ range $scripts}}
       <script src="{{ . }}"></script>
       {{ end }}
-    {{ end }}
     {{ if .Page.IsHome }}
       <script src="{{ "js/service-worker-registration.js" | absURL }}"></script>
     {{ end }}
