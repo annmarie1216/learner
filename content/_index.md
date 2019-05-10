@@ -2,4 +2,4 @@
 title = "Learner: A Documentation Builder"
 +++
 
-This is your homepage. These are the contents of the `index.md` file, found in your `content` folder.
+Welcome to **Learner**, a documentation builder for Pearsson dev teams. Learner makes it easy to document both the design specs and the code for your projects, and to see this material in one place.
