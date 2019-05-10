@@ -27,9 +27,7 @@
     {{ end }}
   </head>
   <body>
-    {{ if ne .Type "print-version" }}
-      <a href="#main">skip to content</a>
-    {{ end }}
+    <a href="#main">skip to content</a>
     {{ partial "svg.html" . }}
     <div class="wrapper {{ if eq .Type "print-version" }}print-version{{ end }}">
         <header class="intro-and-nav" role="banner">
