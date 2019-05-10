@@ -40,21 +40,8 @@
               </a>
               <p class="library-desc">
                 {{ .Site.Params.Description | markdownify }}
-                {{ if ne .Type "print-version" }}
-                  <a class="print" href="{{ "print-version" | absURL }}">
-                    <svg viewBox="0 0 35 45" aria-hidden="true" focusable="false">
-                      <use xlink:href="#doc"></use>
-                    </svg>Print version
-                 {{ end }}
                </a>
               </p>
-              {{ if eq .Type "print-version" }}
-                <p class="toc-link">
-                  <span aria-hidden="true">&#x2193;</span>
-                  <a href="#toc">Table of contents</a>
-                  <span aria-hidden="true">&#x2193;</span>
-                </p>
-              {{ end }}
             </div>
             {{ block "nav" . }}
               <nav id="patterns-nav" class="patterns" role="navigation">
