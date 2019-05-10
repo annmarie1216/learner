@@ -19,7 +19,7 @@ template {
   display: none !important;
 }
 * + * {
-    margin-top: 1.85rem;
+    margin-top: 1.2rem;
 }
 br,
 dt,
