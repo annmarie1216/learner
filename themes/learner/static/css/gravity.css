@@ -247,7 +247,7 @@ html {
      .gr-grid-container {
        margin: 0 calc((128rem - 112.8rem) / 2); } }
 
-  [class*="gr-h"], .gr-page-heading {
+  [class*="gr-h"], [class*="gr-page-heading"] {
     font-family: 'Open Sans';
     font-weight: normal;
   }
@@ -255,6 +255,11 @@ html {
   .gr-page-heading {
     font-size: 3.8rem;
     line-height: 1.369;
+  }
+
+  .gr-page-heading__small {
+    font-size: 2.8rem;
+    line-height: 1.35714;
   }
 
  .gr-h1 {

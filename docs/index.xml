@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Name Of This Project/Site on Learner</title>
+    <title>Learner: A Documentation Builder on Learner</title>
     <link>https://pearson-ux.github.io/learner/</link>
-    <description>Recent content in The Name Of This Project/Site on Learner</description>
+    <description>Recent content in Learner: A Documentation Builder on Learner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
