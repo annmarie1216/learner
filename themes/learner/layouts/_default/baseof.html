@@ -29,7 +29,7 @@
   <body>
     <a href="#main">skip to content</a>
     {{ partial "svg.html" . }}
-    <div class="wrapper {{ if eq .Type "print-version" }}print-version{{ end }}">
+    <div class="wrapper">
         <header class="intro-and-nav" role="banner">
           <div>
             <div class="intro">
@@ -104,10 +104,10 @@
     </div>
     <script src="{{ "js/prism.js" | absURL }}"></script>
     <script src="{{ "js/dom-scripts.js" | absURL }}"></script>
-    {{ $scripts := .Params.Scripts}}
-      {{ range $scripts}}
-      <script src="{{ . }}"></script>
-      {{ end }}
+    {{ range .Params.Scripts }}
+    {{ $src := ( cond ( hasPrefix . "http" ) . ( . | absURL ) ) }}
+      <script src="{{ $src }}"></script>
+    {{ end }}
     {{ if .Page.IsHome }}
       <script src="{{ "js/service-worker-registration.js" | absURL }}"></script>
     {{ end }}
