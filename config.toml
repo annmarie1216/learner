@@ -7,3 +7,4 @@ baseUrl = "https://pearson-ux.github.io/learner/"
 
 [params]
   description = "Documentation for Learner, the Pearson documentation site builder, which was itself built with Learner."
+  fontSize = 16
