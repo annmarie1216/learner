@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://pearson-ux.github.io/learner/404.html">
+    <link rel="canonical" href="https://pearson-ux.github.io/learner/patterns/serving/">
     <link rel="shortcut icon" href="https://pearson-ux.github.io/learner/images/favicon.ico" type="image/x-icon">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
@@ -19,7 +19,7 @@
     </style>
     <title>
       
-        404 Page not found | Learner
+        Serving | Learner
       
     </title>
     
@@ -147,7 +147,7 @@
                       </li>
                     
                       <li class="pattern">
-                        <a href="https://pearson-ux.github.io/learner/patterns/serving/" >
+                        <a href="https://pearson-ux.github.io/learner/patterns/serving/" aria-current="page">
                           <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
                             <use xlink:href="#bookmark"></use>
                           </svg>
@@ -174,11 +174,70 @@
       <div class="main-and-footer">
         <div>
           
-    <main id="main">
-      <div>
-       <h1 id="title"><a href="https://pearson-ux.github.io/learner/">Go Home</a></h1>
-      </div>
-    </main>
+  <main id="main">
+    <h1 class="gr-page-heading__small">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Serving
+    </h1>
+    
+    
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading" class="gr-h2 gr-semi-bold">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#serving-locally">
+            Serving locally
+          </a>
+        </li>
+      
+        <li>
+          <a href="#publishing-on-github-pages">
+            Publishing on Github Pages
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    
+
+<h2 class="gr-h2 gr-semi-bold" id="serving-locally">Serving locally</h2>
+
+<p>While you&rsquo;re creating content for your project, you&rsquo;ll probably want to see what the finished product looks like. Fortunately, <strong>Learner</strong> is easy to serve locally using the <code>serve</code> command:</p>
+
+<pre class="cmd"><code>npm run serve</code></pre>
+
+
+<p>This will serve your working project from <code>localhost:1313</code>. Whenever you make changes to your files, the site will automatically rebuild. No need to refresh the web page!</p>
+
+<h2 class="gr-h2 gr-semi-bold" id="publishing-on-github-pages">Publishing on Github Pages</h2>
+
+<p><strong>Learner</strong> creates a <code>/docs</code> folder containing the latest version of your site whenever you do an <code>npm run build</code> or a <code>git commit</code>. So long as you forked the <strong>Learner</strong> repository when making your own version (see <a class="pattern-link" href="https://pearson-ux.github.io/learner/patterns/setup/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Setup</a>), whenever you push to master, you will also be updating the site found at your Github Pages URL.</p>
+
+<p>This URL will be in the following format:</p>
+
+<pre><code>[your user name].github.io/[your library repo name]
+</code></pre>
+
+<p>You&rsquo;ll also need to add this value to your <code>config.toml</code> file as the <code>baseURL</code>. For <strong>Learner</strong>&rsquo;s own documentation it looks like the following. Just overwrite it.</p>
+
+<pre><code>baseURL = &quot;https://thepaciellogroup.github.io/Learner/&quot;
+</code></pre>
+
+<h2 class="gr-h3 gr-semi-bold" id="set-the-publishing-source">Set the publishing source</h3>
+
+<p>You will find the <code>docs</code> folder is not automatically setup as the publishing source, even when forking the repo. In which case, you must set it under  <strong>Settings → Github Pages → Source</strong> in the web interface.</p>
+
+<p><img src="https://pearson-ux.github.io/learner/images/serve_from_docs.png" alt="The publishing source dropdown menu on Github" /></p>
+
+  </main>
 
           <footer role="contentinfo">
             <div>

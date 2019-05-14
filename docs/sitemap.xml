@@ -7,6 +7,18 @@
   </url>
   
   <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/serving/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/updating/</loc>
+  </url>
+  
+  <url>
     <loc>https://pearson-ux.github.io/learner/categories/</loc>
     <priority>0</priority>
   </url>
