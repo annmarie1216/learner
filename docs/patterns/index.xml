@@ -50,7 +50,7 @@ Publishing on Github Pages Learner creates a /docs folder containing the latest 
       
       <guid>https://pearson-ux.github.io/learner/patterns/updating/</guid>
       <description>The core of Learner&amp;rsquo;s functionality is in its Hugo theme, also called Learner. This is found in the theme folder.
-* content * docs * lib * snippets * static * themes * Learner  Do not &amp;ldquo;hack the core&amp;rdquo;. If you have any issues with Learner, please report them to the Learner Github repository and they will be dealt with ASAP.
+ content docs lib snippets static themes  Learner    Do not &amp;ldquo;hack the core&amp;rdquo;. If you have any issues with Learner, please report them to the Learner Github repository and they will be dealt with ASAP.
 Learner is undergoing constant development, so keep an eye out for new releases.</description>
     </item>
     

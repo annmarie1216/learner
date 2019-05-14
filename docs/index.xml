@@ -41,7 +41,7 @@ brew install hugo Alternatively, you can manually install Hugo from a package. Y
       
       <guid>https://pearson-ux.github.io/learner/patterns/writing/project-structure/</guid>
       <description>Before you can set about making documentation, you need to know where everything goes. The simplest folder structure looks like this:
-* content * \_index.md * print-version.md * patterns * name-of-my-pattern.md * name-of-my-other-pattern.md   /content - This is where all of your content lives. You won&amp;rsquo;t need to visit any other folders very frequently. _index.md — This is the content file for your home page. print-version.md — This is a placeholder for the single-page / print-friendly version of you library.</description>
+ content  _index.md print-version.md patterns  name-of-my-pattern.md name-of-my-other-pattern.md      /content - This is where all of your content lives. You won&amp;rsquo;t need to visit any other folders very frequently. _index.md — This is the content file for your home page. print-version.md — This is a placeholder for the single-page / print-friendly version of you library.</description>
     </item>
     
     <item>
@@ -103,7 +103,7 @@ Learner offers another option: a special demo shortcode that allows you to write
       
       <guid>https://pearson-ux.github.io/learner/patterns/updating/</guid>
       <description>The core of Learner&amp;rsquo;s functionality is in its Hugo theme, also called Learner. This is found in the theme folder.
-* content * docs * lib * snippets * static * themes * Learner  Do not &amp;ldquo;hack the core&amp;rdquo;. If you have any issues with Learner, please report them to the Learner Github repository and they will be dealt with ASAP.
+ content docs lib snippets static themes  Learner    Do not &amp;ldquo;hack the core&amp;rdquo;. If you have any issues with Learner, please report them to the Learner Github repository and they will be dealt with ASAP.
 Learner is undergoing constant development, so keep an eye out for new releases.</description>
     </item>
     
@@ -158,7 +158,7 @@ The file tree is described using a markdown nested list structure:
       
       <guid>https://pearson-ux.github.io/learner/patterns/media/including-images/</guid>
       <description>From time to time, you&amp;rsquo;ll be wanting to include images illustrating the documented pattern in hand. Images live in the static folder, which is a sibling of the /content folder you&amp;rsquo;ll be mostly working in.
-* content * static * images * logo.png * menu-button.gif     When you first make a copy of **Learner**, **Learner&#39;s** own logo will be included. You should replace this with your own company or project logo.</description>
+ content static  images  logo.png menu-button.gif        When you first make a copy of **Learner**, **Learner&#39;s** own logo will be included. You should replace this with your own company or project logo.</description>
     </item>
     
     <item>
