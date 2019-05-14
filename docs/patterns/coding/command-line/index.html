@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://pearson-ux.github.io/learner/categories/">
+    <link rel="canonical" href="https://pearson-ux.github.io/learner/patterns/coding/command-line/">
     <link rel="shortcut icon" href="https://pearson-ux.github.io/learner/images/favicon.ico" type="image/x-icon">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
@@ -19,7 +19,7 @@
     </style>
     <title>
       
-        Categories | Learner
+        Command line | Learner
       
     </title>
     
@@ -301,7 +301,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://pearson-ux.github.io/learner/patterns/coding/command-line/" >
+                              <a href="https://pearson-ux.github.io/learner/patterns/coding/command-line/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -340,12 +340,45 @@
         <div>
           
   <main id="main">
-    <h1>
-      Categories
+    <h1 class="gr-page-heading__small">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Command line
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+
+    
+    <p>Your pattern documentation may need to include commands for installing packages or using <abbr title="command line interface">CLI</abbr>s. <strong>Learner</strong> offers the <code>cmd</code> shortcode for making code blocks look like terminal commands.</p>
+
+<p>Here&rsquo;s how you write it:</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+&#x7b;{&lt;cmd>}}
+npm run start
+&#x7b;{&lt;/cmd>}}
+</code></pre>
+
+
+<p>And here&rsquo;s how it looks:</p>
+
+<pre class="cmd"><code>npm run start</code></pre>
+
+
+<aside aria-label="warning" class="note warning">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 48.430474 41.646302" focusable="false">
+      <use xlink:href="#warning"></use>
+    </svg>
+    
+The `cmd` shortcode currently only supports single commands. If you want to show multiple, successive commands use separate `cmd` blocks.
+
+  </div>
+</aside>
+
   </main>
 
           <footer role="contentinfo">

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://pearson-ux.github.io/learner/categories/">
+    <link rel="canonical" href="https://pearson-ux.github.io/learner/patterns/writing/references/">
     <link rel="shortcut icon" href="https://pearson-ux.github.io/learner/images/favicon.ico" type="image/x-icon">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
@@ -19,7 +19,7 @@
     </style>
     <title>
       
-        Categories | Learner
+        References | Learner
       
     </title>
     
@@ -206,7 +206,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://pearson-ux.github.io/learner/patterns/writing/references/" >
+                              <a href="https://pearson-ux.github.io/learner/patterns/writing/references/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -340,12 +340,426 @@
         <div>
           
   <main id="main">
-    <h1>
-      Categories
+    <h1 class="gr-page-heading__small">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      References
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading" class="gr-h2 gr-semi-bold">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#cross-references">
+            Cross-references
+          </a>
+        </li>
+      
+        <li>
+          <a href="#wcag-references">
+            WCAG References
+          </a>
+        </li>
+      
+        <li>
+          <a href="#inclusive-design-principle-references">
+            Inclusive Design Principle references
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    
+
+<h2 class="gr-h2 gr-semi-bold" id="cross-references">Cross-references</h2>
+
+<p><strong>Learner</strong> identifies the main content files in your documentation as <em>patterns</em>, and they&rsquo;re kept in the <strong>content/ patterns</strong> folder. It&rsquo;s easy to cross-reference patterns using the <code>pattern</code> shortcode. For example, I can reference the <a class="pattern-link" href="https://pearson-ux.github.io/learner/patterns/writing/notes-and-warnings/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Notes &amp; warnings</a> pattern. Here&rsquo;s what the markdown looks like, including the shortcode:</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+I can reference the &#x7b;{% pattern "Notes & warnings" %}} pattern here.
+</code></pre>
+
+
+<p>This saves you having to worry about pathing and decorates the generated link with a bookmark icon, identifying the link as a pattern reference visually.</p>
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+The title argument you supply to the shortcode must be exactly the same as the referenced pattern's `title` metadata value and is case sensitive.
+
+  </div>
+</aside>
+
+<h2 class="gr-h2 gr-semi-bold" id="wcag-references">WCAG References</h2>
+
+<p><a href="https://www.w3.org/TR/WCAG/">WCAG 2.0</a> is the <em>de facto</em> standard for accessible interfaces. When writing about inclusive interfaces, sometimes you&rsquo;ll want to refer to WCAG to highlight which success criteria the pattern meets.</p>
+
+<p>Instead of having to copy and paste content and links to WCAG, <strong>Learner</strong> provides a shortcode mechanism that lets you simply list the success criteria by number:</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+&#x7b;{% wcag include="1.2.1, 1.3.1, 4.1.2" %}}
+</code></pre>
+
+
+<p>This generates a list of references that includes the names of each criterion and links to them directly. Like this:</p>
+
+<ul class="wcag ">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li>
+        <strong><a href="https://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable">
+          <svg class="wcag-icon" viewBox="0 0 127.09899 67.763" aria-hidden="true" focusable="false">
+            <use xlink:href="#w3c"></use>
+          </svg>
+          2.1.1 Keyboard</a> (level A)
+        </strong>
+        
+      </li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li>
+        <strong><a href="https://www.w3.org/TR/WCAG20/#ensure-compat-rsv">
+          <svg class="wcag-icon" viewBox="0 0 127.09899 67.763" aria-hidden="true" focusable="false">
+            <use xlink:href="#w3c"></use>
+          </svg>
+          4.1.2 Name, Role, Value</a> (level A)
+        </strong>
+        
+      </li>
+    
+  
+</ul>
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+You don't have to leave spaces after the comma separators. They are optional.
+
+  </div>
+</aside>
+
+<h2 class="gr-h3 gr-semi-bold" id="full-descriptions">Full descriptions</h3>
+
+<p>Sometimes, you&rsquo;ll want to include the full descriptions of the success criteria inline. This is possible by setting <code>descriptions</code> to <code>true</code>:</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+&#x7b;{% wcag include="1.3.1, 4.1.2" descriptions="true" %}}
+</code></pre>
+
+
+<p>Here&rsquo;s the more verbose output:</p>
+
+<ul class="wcag with-desc">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li>
+        <strong><a href="https://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable">
+          <svg class="wcag-icon" viewBox="0 0 127.09899 67.763" aria-hidden="true" focusable="false">
+            <use xlink:href="#w3c"></use>
+          </svg>
+          2.1.1 Keyboard</a> (level A):
+        </strong>
+        
+          All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user&#39;s movement and not just the endpoints
+          
+        
+      </li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li>
+        <strong><a href="https://www.w3.org/TR/WCAG20/#ensure-compat-rsv">
+          <svg class="wcag-icon" viewBox="0 0 127.09899 67.763" aria-hidden="true" focusable="false">
+            <use xlink:href="#w3c"></use>
+          </svg>
+          4.1.2 Name, Role, Value</a> (level A):
+        </strong>
+        
+          For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.
+          
+        
+      </li>
+    
+  
+</ul>
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+Both omitting the `descriptions` attribute and including it with a "false" value will omit descriptions. If it is included it _must_ have a value. A boolean attribute will break the output.
+
+  </div>
+</aside>
+
+<h2 class="gr-h2 gr-semi-bold" id="inclusive-design-principle-references">Inclusive Design Principle references</h2>
+
+<p>Some inclusive design concepts are not reducible to success or fail criteria. This is why The Paciello Group wrote the <a href="http://inclusivedesignprinciples.org/">Inclusive Design Principles</a>. These can be listed by name.</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+&#x7b;{% principles include="Add value, Be consistent" descriptions="true" %}}
+</code></pre>
+
+
+<p>Here&rsquo;s the output with <code>descriptions=&quot;true&quot;</code>:</p>
+
+<ul class="principles with-desc">
+  
+</ul>
+
   </main>
 
           <footer role="contentinfo">

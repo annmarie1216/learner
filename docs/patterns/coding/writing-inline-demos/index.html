@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://pearson-ux.github.io/learner/categories/">
+    <link rel="canonical" href="https://pearson-ux.github.io/learner/patterns/coding/writing-inline-demos/">
     <link rel="shortcut icon" href="https://pearson-ux.github.io/learner/images/favicon.ico" type="image/x-icon">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
@@ -19,7 +19,7 @@
     </style>
     <title>
       
-        Categories | Learner
+        Writing inline demos | Learner
       
     </title>
     
@@ -283,7 +283,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://pearson-ux.github.io/learner/patterns/coding/writing-inline-demos/" >
+                              <a href="https://pearson-ux.github.io/learner/patterns/coding/writing-inline-demos/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -340,12 +340,218 @@
         <div>
           
   <main id="main">
-    <h1>
-      Categories
+    <h1 class="gr-page-heading__small">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Writing inline demos
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading" class="gr-h2 gr-semi-bold">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#styling-the-container">
+            Styling the container
+          </a>
+        </li>
+      
+        <li>
+          <a href="#launch">
+            “Launch”
+          </a>
+        </li>
+      
+        <li>
+          <a href="#captioned-demos">
+            Captioned demos
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    
+
+<p>There are some issues with <a class="pattern-link" href="https://pearson-ux.github.io/learner/patterns/coding/demo-embedding/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Demo embedding</a>, like the embeds not working offline. They also come with their own branding, which will clash with the pattern you&rsquo;re trying to illustrate.</p>
+
+<p><strong>Learner</strong> offers another option: a special <code>demo</code> shortcode that allows you to write HTML, CSS, and JavaScript directly into the markdown file. The outputted demo is encapsulated using Shadow DOM, so you don&rsquo;t have to worry about broken styles and global JS.</p>
+
+<p>Here&rsquo;s the example code for an inline demo of a toggle button:</p>
+
+<pre class="language-html"><code class="language-html" data-codeblock-shortcode>
+&#x7b;{&lt;demo>}}
+&lt;button aria-pressed="false">Toggle Me&lt;/button>
+&lt;style>
+button {
+    background: DarkCyan;
+    color: white;
+    border: 0;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    border-right: 5px solid #000;
+    border-bottom: 5px solid #000;
+}
+
+[aria-pressed="true"] {
+  border: 0;
+  border-top: 5px solid #000;
+  border-left: 5px solid #000;
+}
+&lt;/style>
+&lt;script>
+var toggle = demo.querySelector('[aria-pressed]');
+
+toggle.addEventListener('click', (e) => {  
+  let pressed = e.target.getAttribute('aria-pressed') === 'true';
+  e.target.setAttribute('aria-pressed', !pressed);
+});
+&lt;/script>
+&#x7b;{&lt;/demo>}}
+</code></pre>
+
+
+<p>Note the <code>demo.querySelector</code> on line <code>21</code>. <strong>Learner</strong> automatically provides <code>demo</code>, representing the root node of the demo. It&rsquo;s like the <code>document</code> keyword but for a demo&rsquo;s subtree.</p>
+
+<p>Here&rsquo;s a live demo <em>of</em> the demo:</p>
+
+
+<div class="demo-container">
+  
+      <div class="demo-inner" >
+        <div class="demo" id="js-demo-285170a1c0812ad34ac4b853a052c8bd"></div>
+        <button data-launch="js-demo-285170a1c0812ad34ac4b853a052c8bd">Launch <span aria-hidden="true">↗</span></button>
+      </div>
+      
+  
+  <template id="template-285170a1c0812ad34ac4b853a052c8bd">
+      
+<button aria-pressed="false">Toggle Me</button>
+<style>
+button {
+    background: DarkCyan;
+    color: white;
+    border: 0;
+    border-radius: 0.25em;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    border-right: 5px solid #000;
+    border-bottom: 5px solid #000;
+}
+
+[aria-pressed="true"] {
+  border: 0;
+  border-top: 5px solid #000;
+  border-left: 5px solid #000;
+}
+</style>
+<script>
+var toggle = demo.querySelector('[aria-pressed]');
+
+toggle.addEventListener('click', function () {  
+  var pressed = this.getAttribute('aria-pressed') === 'true';
+  this.setAttribute('aria-pressed', !pressed);
+});
+</script>
+
+  </template>
+  <script>
+    (function() {
+      var root = document.getElementById('js-demo-285170a1c0812ad34ac4b853a052c8bd');
+      var template = document.getElementById('template-285170a1c0812ad34ac4b853a052c8bd');
+
+      
+      var demoDiv = document.createElement('div');
+      demoDiv.innerHTML = template.innerHTML;
+      var standaloneScript = demoDiv.querySelector('script');
+      if (standaloneScript) {
+        standaloneScript.textContent = '(function() { document.getElementsByTagName(\'html\')[0].setAttribute(\'lang\', \'en\'); var demo = document; ' + standaloneScript.textContent + ' })();';
+      }
+
+      if (document.head.attachShadow) {
+        var templateScript = template.content.querySelector('script');
+        if (templateScript) {
+          var wrappedScript = '(function() { var demo = document.getElementById(\'js-demo-285170a1c0812ad34ac4b853a052c8bd\').shadowRoot;' + templateScript.textContent + '})();';
+          templateScript.textContent = wrappedScript;
+        }
+        root.attachShadow({mode: 'open'});
+        root.shadowRoot.appendChild(document.importNode(template.content, true));
+      } else {
+        root.innerHTML = '<p class="site-error"><strong style="font-weight:bold">Site error:</strong> A browser supporting Shadow DOM is needed to run encapsulated demos. You can launch the demo in a separate window ↓</p>';
+      }
+
+      var launchButton = document.querySelector('[data-launch="js-demo-285170a1c0812ad34ac4b853a052c8bd"]');
+      launchButton.addEventListener('click', function () {
+        var standalone = window.open();
+        standalone.document.body.innerHTML = demoDiv.innerHTML;
+
+        
+        var newScript = standalone.document.createElement('script');
+        var oldScript = standalone.document.querySelector('script');
+        if (oldScript) {
+          newScript.textContent = oldScript.textContent;
+          oldScript.parentNode.removeChild(oldScript);
+          standalone.document.body.appendChild(newScript);
+        }
+        
+
+        standalone.document.title = 'demo ' + "285170a1c0812ad34ac4b853a052c8bd";
+      });
+    })();
+  </script>
+</div>
+
+
+<h2 class="gr-h2 gr-semi-bold" id="styling-the-container">Styling the container</h2>
+
+<p>Sometimes your component will be expected to appear in a context where the parent element has a background color and possibly other styles. You can add style to your demo block&rsquo;s container element using the <code>style</code> attribute. It works just like standard inline styling.</p>
+
+<pre class="language-html"><code class="language-html" data-codeblock-shortcode>
+&#x7b;{&lt;demo style="background-color: pink; padding: 1rem;">}}
+&lt;!-- demo code here -->
+&#x7b;{&lt;/demo>}}
+</code></pre>
+
+
+<h2 class="gr-h2 gr-semi-bold" id="launch">&ldquo;Launch&rdquo;</h2>
+
+<p>The &ldquo;Launch&rdquo; button takes the demo code and pushes it to a new browser tab. This serves two purposes:</p>
+
+<ul>
+<li>It provides a fallback for browsers that do not support Shadow DOM encapsulation (a warning message will replace the inline demo).</li>
+<li>It creates an isolated test case for the demo, allowing you to run browser extensions and bookmarklets on the the demo code and <em>just</em> the demo code.</li>
+</ul>
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+The "Launch" button is positioned over the styleable demo container. Bear this is mind when styling the container (see the previous section).
+
+  </div>
+</aside>
+
+<h2 class="gr-h2 gr-semi-bold" id="captioned-demos">Captioned demos</h2>
+
+<p>It&rsquo;s possible to give your demo a caption using an accessible <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> structure. All <em>you</em> need to do is supply a <code>caption</code> attribute. For example:</p>
+
+<pre class="language-html"><code class="language-html" data-codeblock-shortcode>
+&#x7b;{&lt;demo caption="A basic button element">}}
+&lt;!-- demo code here -->
+&#x7b;{&lt;/demo>}}
+</code></pre>
+
+
+<p>Along with the standard <code>figure</code> shortcodes (described in <a class="pattern-link" href="https://pearson-ux.github.io/learner/patterns/media/including-images/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Including images</a>), demo figures are numbered automatically according to their order in the page. You can use markdown syntax in the caption text value.</p>
+
   </main>
 
           <footer role="contentinfo">

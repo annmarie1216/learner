@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://pearson-ux.github.io/learner/categories/">
+    <link rel="canonical" href="https://pearson-ux.github.io/learner/patterns/writing/notes-and-warnings/">
     <link rel="shortcut icon" href="https://pearson-ux.github.io/learner/images/favicon.ico" type="image/x-icon">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
@@ -19,7 +19,7 @@
     </style>
     <title>
       
-        Categories | Learner
+        Notes &amp; warnings | Learner
       
     </title>
     
@@ -197,7 +197,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://pearson-ux.github.io/learner/patterns/writing/notes-and-warnings/" >
+                              <a href="https://pearson-ux.github.io/learner/patterns/writing/notes-and-warnings/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -340,12 +340,89 @@
         <div>
           
   <main id="main">
-    <h1>
-      Categories
+    <h1 class="gr-page-heading__small">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Notes &amp; warnings
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading" class="gr-h2 gr-semi-bold">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#notes">
+            Notes
+          </a>
+        </li>
+      
+        <li>
+          <a href="#warnings">
+            Warnings
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    
+
+<p><strong>Learner</strong> acknowledges that simple markdown is limiting when it comes to writing compelling documentation, so it provides a number of &ldquo;shortcodes&rdquo;. Shortcodes offer a simple syntax for including rich content. For example, <strong>Learner</strong> provides shortcodes for including notes and warnings.</p>
+
+<h2 class="gr-h2 gr-semi-bold" id="notes">Notes</h2>
+
+<p>You may wish to pick out some content in your pattern&rsquo;s documentation as a note — an aside to the main thrust of the pattern&rsquo;s description. This is possible using the following syntax:</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+&#x7b;{% note %}}
+This is a note! It's something the reader may like to know about but is supplementary to the main content. Use notes when something may be interesting but not critical.
+&#x7b;{% /note %}}
+</code></pre>
+
+
+<p>Notes render like this:</p>
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+This is a note! It's something the reader may like to know about but is supplementary to the main content. Use notes when something may be interesting but not critical.
+
+  </div>
+</aside>
+
+<h2 class="gr-h2 gr-semi-bold" id="warnings">Warnings</h2>
+
+<p>Warnings are like notes, but with more urgency.</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+&#x7b;{% warning %}}
+This is a warning! It's about something the reader should be careful to do or to avoid doing. Use warnings when something could go wrong.
+&#x7b;{% /warning %}}
+</code></pre>
+
+
+<p>Warnings render like this:</p>
+
+<aside aria-label="warning" class="note warning">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 48.430474 41.646302" focusable="false">
+      <use xlink:href="#warning"></use>
+    </svg>
+    
+This is a warning! It's about something the reader should be careful to do or to avoid doing. Use warnings when something could go wrong.
+
+  </div>
+</aside>
+
   </main>
 
           <footer role="contentinfo">

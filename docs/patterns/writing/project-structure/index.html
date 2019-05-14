@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://pearson-ux.github.io/learner/categories/">
+    <link rel="canonical" href="https://pearson-ux.github.io/learner/patterns/writing/project-structure/">
     <link rel="shortcut icon" href="https://pearson-ux.github.io/learner/images/favicon.ico" type="image/x-icon">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
@@ -19,7 +19,7 @@
     </style>
     <title>
       
-        Categories | Learner
+        Project structure | Learner
       
     </title>
     
@@ -170,7 +170,7 @@
                         <ul>
                           
                             <li class="pattern">
-                              <a href="https://pearson-ux.github.io/learner/patterns/writing/project-structure/" >
+                              <a href="https://pearson-ux.github.io/learner/patterns/writing/project-structure/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -340,12 +340,80 @@
         <div>
           
   <main id="main">
-    <h1>
-      Categories
+    <h1 class="gr-page-heading__small">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Project structure
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+
+    
+    
+
+<p>Before you can set about making documentation, you need to know where everything goes. The simplest folder structure looks like this:</p>
+
+<div class="file-tree">
+  
+* content
+    * \_index.md
+    * print-version.md
+    * patterns
+        * name-of-my-pattern.md
+        * name-of-my-other-pattern.md
+
+</div>
+
+<ul>
+<li><strong>/content</strong> - This is where all of your content lives. You won&rsquo;t need to visit any other folders very frequently.</li>
+<li><strong>_index.md</strong> — This is the content file for your home page.</li>
+<li><strong>print-version.md</strong> — This is a placeholder for the single-page / print-friendly version of you library. Leave this file as it is.</li>
+<li><strong>/patterns</strong> — This is the folder where individual content files are kept. <strong>Learner</strong> refers to each individual documentation file/page as a &ldquo;pattern&rdquo;.</li>
+</ul>
+
+<h2 class="gr-h2 gr-semi-bold" id="subsections">Subsections</h2>
+
+<p>You may have noticed that this site&rsquo;s navigation is divided partly into subsections, with labels like &ldquo;Writing&rdquo;. <strong>Learner</strong> (or, rather, Hugo) allows you to create such subsections by simply nesting folders under the <code>/patterns</code> folder. In the following example, I have a subsection about different types of &ldquo;popup&rdquo; pattern.</p>
+
+<div class="file-tree">
+  
+* content
+    * \_index.md
+    * patterns
+        * name-of-my-pattern.md
+        * name-of-my-other-pattern.md
+        * popups
+            * \_index.md
+            * popup-menu.md
+            * tooltips.md
+
+</div>
+
+<p>Subfolders like <code>/popups</code> must each have an <code>_index.md</code> file. This file doesn&rsquo;t need any content except the TOML metadata defining the title (name) of that subsection:</p>
+
+<pre><code>+++
+title = &quot;Popup windows&quot;
++++
+</code></pre>
+
+<p>This title is what labels the subsection in the navigation, <em>not</em> the folder name (<code>/popups</code>, in this case). For each subfolder you create, you must also create one of these <code>_index.md</code> files. The <code>/patterns</code> folder itself does not need one, however.</p>
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+**Learner** does not currently support _sub_-subsections. You can only create child folders under `/patterns`.
+
+  </div>
+</aside>
+
+<p>Now that you know where to put everything, it&rsquo;s time to talk about how to actually write individual patterns. Don&rsquo;t worry, it&rsquo;s pretty straightforward. Turn to <a class="pattern-link" href="https://pearson-ux.github.io/learner/patterns/writing/markdown-and-metadata/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Markdown &amp; metadata</a>.</p>
+
   </main>
 
           <footer role="contentinfo">

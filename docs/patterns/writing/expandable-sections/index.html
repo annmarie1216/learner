@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://pearson-ux.github.io/learner/categories/">
+    <link rel="canonical" href="https://pearson-ux.github.io/learner/patterns/writing/expandable-sections/">
     <link rel="shortcut icon" href="https://pearson-ux.github.io/learner/images/favicon.ico" type="image/x-icon">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
@@ -19,7 +19,7 @@
     </style>
     <title>
       
-        Categories | Learner
+        Expandable sections | Learner
       
     </title>
     
@@ -188,7 +188,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://pearson-ux.github.io/learner/patterns/writing/expandable-sections/" >
+                              <a href="https://pearson-ux.github.io/learner/patterns/writing/expandable-sections/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -340,12 +340,130 @@
         <div>
           
   <main id="main">
-    <h1>
-      Categories
+    <h1 class="gr-page-heading__small">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Expandable sections
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+
+    
+    <p>In some cases, where there is a lot of content, it&rsquo;s helpful to collapse certain sections. That way, readers get an overview of what&rsquo;s in the content and can choose where to focus in. <strong>Learner</strong> provides a shortcode method for creating expandable sections which generates accessible markup using <code>aria-expanded</code>.</p>
+
+<p>The <code>expandable</code> shortcode takes three parameters:</p>
+
+<ul>
+<li><strong>label</strong> — This is the label for the the section heading.</li>
+<li><strong>level</strong> — This is the heading level (e.g. <code>level=&quot;2&quot;</code> for an <code>&lt;h2&gt;</code>) that will contain the label. If you omit a level parameter, no heading is used; it&rsquo;s just a button.</li>
+<li><strong>open</strong> — Include this and give it a value of &ldquo;true&rdquo; or &ldquo;yes&rdquo; to make the section expanded on page load.</li>
+</ul>
+
+<p>Here&rsquo;s what the code might look like for a simple expandable section containing markdown:</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+&#x7b;{% expandable label="A section of dummy text" level="2" %}}
+Here is some markdown including [a link](https://twitter.com/heydonworks). Donec erat est, feugiat a est sed, aliquet pharetra ipsum. Vivamus in arcu leo. Praesent feugiat, purus a molestie ultrices, libero massa iaculis ante, sit amet accumsan leo eros vel ligula.
+&#x7b;{% /expandable %}}
+</code></pre>
+
+
+<p>Let&rsquo;s look at what that outputs:</p>
+
+<div class="expandable-section">
+  
+    <h2 class="gr-h2 gr-semi-bold">
+  
+    <button aria-expanded="false" data-expands="js-expandable-96787626368eb25280dc28455fe4c57f">
+      <span class="expandable-label">A section of dummy text</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h2>
+  
+  <div id="js-expandable-96787626368eb25280dc28455fe4c57f" hidden>
+    
+Here is some markdown including [a link](https://twitter.com/heydonworks). Donec erat est, feugiat a est sed, aliquet pharetra ipsum. Vivamus in arcu leo. Praesent feugiat, purus a molestie ultrices, libero massa iaculis ante, sit amet accumsan leo eros vel ligula.
+
+  </div>
+</div>
+
+<p>Successive collapsible sections fit snugly together. The second of the following two has <code>open=&quot;true&quot;</code>.</p>
+
+<div class="expandable-section">
+  
+    <h2 class="gr-h2 gr-semi-bold">
+  
+    <button aria-expanded="false" data-expands="js-expandable-6c72afc387825ea47d972a18e05f3944">
+      <span class="expandable-label">A section of dummy text</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h2>
+  
+  <div id="js-expandable-6c72afc387825ea47d972a18e05f3944" hidden>
+    
+Mauris eget elit ut neque venenatis placerat id nec libero. Nunc accumsan cursus elit nec iaculis. Proin id rutrum magna, a aliquet sem. Sed et tortor id sem eleifend porta vitae eget elit. Cras sodales porta malesuada. Suspendisse at odio ac tortor.
+
+  </div>
+</div>
+
+<div class="expandable-section">
+  
+    <h2 class="gr-h2 gr-semi-bold">
+  
+    <button aria-expanded="true" data-expands="js-expandable-0aac81ab41b21504e3bf4f3363e07b8a">
+      <span class="expandable-label">Another dummy section</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h2>
+  
+  <div id="js-expandable-0aac81ab41b21504e3bf4f3363e07b8a" >
+    
+Ut vulputate enim ut lorem iaculis, vel faucibus metus iaculis. Aliquam erat volutpat. Aliquam luctus orci vel consectetur dignissim. Nullam et efficitur lorem, et ornare est. Sed tristique porttitor justo, quis malesuada velit. Nullam et elit finibus, sollicitudin velit placerat, ultricies dui.
+
+  </div>
+</div>
+
+<p>Unfortunately, it is not currently possible to include shortcodes inside other shortcodes, using the &ldquo;<code>%</code>&rdquo; notation (which is designated for markdown content). If you use the angle brackets notation (illustrated below) it is possible, but markdown will no longer be permitted. You will have to code HTML inside such a section manually.</p>
+
+<pre class=""><code  data-codeblock-shortcode>
+&#x7b;{&lt;expandable label="A section of dummy text" level="2">}}
+&lt;p>Here is a pattern reference shortcode: &#x7b;{% pattern "Writing inline demos" %}}.&lt;/p>
+&#x7b;{&lt;/expandable>}}
+</code></pre>
+
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+When you go to print a pattern from your library, some print styles take care of collapsible sections, making them appear expanded and like any other section.
+
+  </div>
+</aside>
+
   </main>
 
           <footer role="contentinfo">

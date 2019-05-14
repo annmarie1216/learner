@@ -10,5 +10,23 @@
 	<atom:link href="https://pearson-ux.github.io/learner/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>markdown</title>
+      <link>https://pearson-ux.github.io/learner/tags/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pearson-ux.github.io/learner/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metadata</title>
+      <link>https://pearson-ux.github.io/learner/tags/metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pearson-ux.github.io/learner/tags/metadata/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
