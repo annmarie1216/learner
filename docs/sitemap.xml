@@ -3,7 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/coding/code-blocks/</loc>
+  </url>
+  
+  <url>
     <loc>https://pearson-ux.github.io/learner/patterns/installation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/writing/project-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/writing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/coding/demo-embedding/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/media/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/writing/markdown-and-metadata/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/serving/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/coding/writing-inline-demos/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/updating/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/writing/expandable-sections/</loc>
   </url>
   
   <url>
@@ -12,7 +56,35 @@
   </url>
   
   <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/coding/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/coding/color-palettes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/coding/command-line/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/coding/file-trees/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/media/including-images/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/media/including-videos/</loc>
+  </url>
+  
+  <url>
     <loc>https://pearson-ux.github.io/learner/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/writing/notes-and-warnings/</loc>
   </url>
   
   <url>
@@ -21,12 +93,38 @@
   </url>
   
   <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/writing/references/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/writing/snippets/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/writing/tables-of-contents/</loc>
+  </url>
+  
+  <url>
     <loc>https://pearson-ux.github.io/learner/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://pearson-ux.github.io/learner/patterns/coding/tested/</loc>
+  </url>
+  
+  <url>
     <loc>https://pearson-ux.github.io/learner/print-version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/tags/markdown/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pearson-ux.github.io/learner/tags/metadata/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

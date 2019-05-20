@@ -302,7 +302,6 @@ caption {
     overflow-x: hidden;
 }
 .intro-and-nav {
-    font-size: 1.76rem;
     width: 32.7rem;
     height: 100vh;
     position: fixed;
@@ -367,8 +366,6 @@ caption {
     margin-top: 1.65rem;
 }
 .patterns li {
-    font-size: 1.22em;
-    line-height: 1.125;
     list-style: none;
 }
 .patterns li + li {
@@ -378,7 +375,6 @@ caption {
     margin-left: 1.65rem;
 }
 .pattern a {
-    font-size: inherit;
     border: 0;
     display: flex;
     flex-wrap: nowrap;
@@ -894,7 +890,7 @@ h1 svg {
         margin-top: 0;
     }
     .pattern {
-        font-size: 2.2rem;
+        /* font-size: 2.2rem; */
     }
     .pattern a {
         padding: 2.2rem;
