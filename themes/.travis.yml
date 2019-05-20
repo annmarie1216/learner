@@ -11,14 +11,14 @@ install:
   - htmlproofer --version
   - git clone https://github.com/EmielH/hugo-theme-test.git
 
-script:
-  - cd hugo-theme-test
-  - hugo -t tale-hugo --themesDir ../..
-  - htmlproofer public --check-html --disable-external --allow-hash-href --checks-to-ignore LinkCheck
+script: |
+  cd hugo-theme-test
+  hugo -t tale-hugo --themesDir ../..
+  htmlproofer public --check-html --disable-external --allow-hash-href --checks-to-ignore LinkCheck
 
-  notifications:
-  email:
-    recipients:
-      - ej.mason@pearson.com
-    on_success: never # default: change
-    on_failure: always # default: always
+notifications:
+email:
+  recipients:
+    - ej.mason@pearson.com
+  on_success: never # default: change
+  on_failure: always # default: always
