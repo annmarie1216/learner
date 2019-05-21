@@ -5,12 +5,12 @@
   "author": "EJ Mason <ej.mason@pearson.com>",
   "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "hugo server -b http://localhost -p 3000",
     "clean": "node lib/clean.js",
     "build": "node lib/build.js",
     "update": "node lib/update.js",
-    "a11y": "(npm list pa11y-ci || npm install -g pa11y-ci) && pa11y-ci --sitemap http://localhost:3000/sitemap.xml --config lib/.pa11yci"
+    "pretest": "[ $(node -p \"try{require('pa11y-ci/package.json').version}catch(e){}\") ] && npm i -g pa11y-ci",
+    "test": "pa11y-ci --sitemap http://localhost:3000/sitemap.xml --config lib/.pa11yci"
   },
   "pre-commit": [
     "build"
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/pearson-ux/learner#readme",
   "devDependencies": {
+    "pa11y-ci": "^2.3.0",
     "pre-commit": "^1.2.2",
     "sw-precache": "^5.2.1"
   }
