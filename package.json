@@ -24,9 +24,8 @@
   },
   "homepage": "https://github.com/pearson-ux/learner#readme",
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "pa11y-ci": "^2.3.0",
     "pre-commit": "^1.2.2",
     "sw-precache": "^5.2.1"
-  }
+  },
+  "dependencies": {}
 }
