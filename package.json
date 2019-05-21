@@ -9,7 +9,7 @@
     "clean": "node lib/clean.js",
     "build": "node lib/build.js",
     "update": "node lib/update.js",
-    "pretest": "[ $(node -p \"try{require('pa11y-ci/package.json').version}catch(e){}\") ] && npm i -g pa11y-ci && npm run serve &",
+    "pretest": "[ $(node -p \"try{require('pa11y-ci/package.json').version}catch(e){}\") ] && npm i -g pa11y-ci",
     "test": "pa11y-ci --sitemap http://localhost:3000/sitemap.xml --config lib/.pa11yci"
   },
   "pre-commit": [
