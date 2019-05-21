@@ -521,15 +521,28 @@ figcaption::before {
     font-weight: bold;
 }
 /* Code blocks */
-
-pre[class*=language-] {
+/* TODO: skin to gravity */
+ pre[class*=language-] {
     background: none;
     margin-top: 4.95rem;
     margin-bottom: 0;
     overflow-y: hidden;
     overflow-x: auto;
 }
-code[class*="language-"], pre[class*="language-"] {
+.token.function {
+    color: #ce2245
+}
+.token.operator {
+    color: #73522c;
+}
+.token.comment, .token.punctuation {
+    color: #747474;
+}
+
+.token.attr-name, .token.selector, .token.string {
+    color: #547d00;
+}
+/* code[class*="language-"], pre[class*="language-"] {
   text-shadow: none;
   filter: grayscale(100%);
 }
@@ -579,7 +592,7 @@ pre[class*=language-] code * {
     font-size: 0.66em;
     margin-right: 0.33em;
     vertical-align: 0.25em;
-}
+} */
 /* file tree lists */
 .file-tree {
     overflow-x: auto;

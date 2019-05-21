@@ -390,7 +390,7 @@
 &lt;button aria-pressed="false">Toggle Me&lt;/button>
 &lt;style>
 button {
-    background: DarkCyan;
+    background: #047A9C;
     color: white;
     border: 0;
     font-size: 1.5rem;
@@ -425,17 +425,17 @@ toggle.addEventListener('click', (e) => {
 <div class="demo-container">
   
       <div class="demo-inner" >
-        <div class="demo" id="js-demo-285170a1c0812ad34ac4b853a052c8bd"></div>
-        <button data-launch="js-demo-285170a1c0812ad34ac4b853a052c8bd">Launch <span aria-hidden="true">↗</span></button>
+        <div class="demo" id="js-demo-a2089f0f407f6602cd42d3dc3b416675"></div>
+        <button data-launch="js-demo-a2089f0f407f6602cd42d3dc3b416675">Launch <span aria-hidden="true">↗</span></button>
       </div>
       
   
-  <template id="template-285170a1c0812ad34ac4b853a052c8bd">
+  <template id="template-a2089f0f407f6602cd42d3dc3b416675">
       
 <button aria-pressed="false">Toggle Me</button>
 <style>
 button {
-    background: DarkCyan;
+    background: #047A9C;
     color: white;
     border: 0;
     border-radius: 0.25em;
@@ -463,8 +463,8 @@ toggle.addEventListener('click', function () {
   </template>
   <script>
     (function() {
-      var root = document.getElementById('js-demo-285170a1c0812ad34ac4b853a052c8bd');
-      var template = document.getElementById('template-285170a1c0812ad34ac4b853a052c8bd');
+      var root = document.getElementById('js-demo-a2089f0f407f6602cd42d3dc3b416675');
+      var template = document.getElementById('template-a2089f0f407f6602cd42d3dc3b416675');
 
       
       var demoDiv = document.createElement('div');
@@ -477,7 +477,7 @@ toggle.addEventListener('click', function () {
       if (document.head.attachShadow) {
         var templateScript = template.content.querySelector('script');
         if (templateScript) {
-          var wrappedScript = '(function() { var demo = document.getElementById(\'js-demo-285170a1c0812ad34ac4b853a052c8bd\').shadowRoot;' + templateScript.textContent + '})();';
+          var wrappedScript = '(function() { var demo = document.getElementById(\'js-demo-a2089f0f407f6602cd42d3dc3b416675\').shadowRoot;' + templateScript.textContent + '})();';
           templateScript.textContent = wrappedScript;
         }
         root.attachShadow({mode: 'open'});
@@ -486,7 +486,7 @@ toggle.addEventListener('click', function () {
         root.innerHTML = '<p class="site-error"><strong style="font-weight:bold">Site error:</strong> A browser supporting Shadow DOM is needed to run encapsulated demos. You can launch the demo in a separate window ↓</p>';
       }
 
-      var launchButton = document.querySelector('[data-launch="js-demo-285170a1c0812ad34ac4b853a052c8bd"]');
+      var launchButton = document.querySelector('[data-launch="js-demo-a2089f0f407f6602cd42d3dc3b416675"]');
       launchButton.addEventListener('click', function () {
         var standalone = window.open();
         standalone.document.body.innerHTML = demoDiv.innerHTML;
@@ -501,7 +501,7 @@ toggle.addEventListener('click', function () {
         }
         
 
-        standalone.document.title = 'demo ' + "285170a1c0812ad34ac4b853a052c8bd";
+        standalone.document.title = 'demo ' + "a2089f0f407f6602cd42d3dc3b416675";
       });
     })();
   </script>

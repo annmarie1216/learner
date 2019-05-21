@@ -14,7 +14,7 @@ Here's the example code for an inline demo of a toggle button:
 &lt;button aria-pressed="false">Toggle Me&lt;/button>
 &lt;style>
 button {
-    background: DarkCyan;
+    background: #047A9C;
     color: white;
     border: 0;
     font-size: 1.5rem;
@@ -48,7 +48,7 @@ Here's a live demo _of_ the demo:
 <button aria-pressed="false">Toggle Me</button>
 <style>
 button {
-    background: DarkCyan;
+    background: #047A9C;
     color: white;
     border: 0;
     border-radius: 0.25em;
