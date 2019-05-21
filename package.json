@@ -10,7 +10,7 @@
     "build": "node lib/build.js",
     "update": "node lib/update.js",
     "pretest": "[ $(node -p \"try{require('pa11y-ci/package.json').version}catch(e){}\") ] && npm i -g pa11y-ci",
-    "test": "pa11y-ci --sitemap http://localhost:3000/sitemap.xml --config lib/.pa11yci"
+    "test": "concurrently --kill-others  \"npm run serve\" \"pa11y-ci --sitemap http://localhost:3000/sitemap.xml --config lib/.pa11yci\""
   },
   "pre-commit": [
     "build"
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/pearson-ux/learner#readme",
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "pa11y-ci": "^2.3.0",
     "pre-commit": "^1.2.2",
     "sw-precache": "^5.2.1"
