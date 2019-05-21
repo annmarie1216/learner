@@ -24,3 +24,12 @@ email:
     - ej.mason@pearson.com
   on_success: never
   on_failure: always
+
+  deploy:
+  provider: pages
+  local_dir: docs
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
