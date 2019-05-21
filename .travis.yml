@@ -13,9 +13,9 @@ install:
   - hugo version
   - gem install html-proofer
   - htmlproofer --version
-  - git clone https://github.com/EmielH/hugo-theme-test.git
 
 script: |
+  git clone https://github.com/EmielH/hugo-theme-test.git
   cd hugo-theme-test
   hugo -t learner --themesDir ${THEMES_DIR}
   htmlproofer ${PUBLISH_DIR} --check-html --disable-external --allow-hash-href --checks-to-ignore LinkCheck
