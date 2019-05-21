@@ -25,6 +25,4 @@ email:
   on_success: never
   on_failure: always
 
-  stages:
-    - name: deploy
-    if: type = pull_request
+  if: type = pull_request
