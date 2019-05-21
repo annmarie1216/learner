@@ -1,5 +1,6 @@
 language: nodejs
-node_js: lts/*
+node_js: 
+  - lts/*
 env:
   matrix:
     - HUGO_VERSION="0.55.5"
