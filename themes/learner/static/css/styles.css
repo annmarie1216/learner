@@ -530,7 +530,11 @@ figcaption::before {
     overflow-x: auto;
 }
 .token.function {
-    color: #ce2245
+    color: #ce2245;
+}
+
+.token.important {
+    color: #DA0474;
 }
 .token.operator {
     color: #73522c;
