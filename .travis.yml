@@ -14,8 +14,9 @@ install:
   - tar xf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
   - mv hugo ~/bin/
   - hugo version
-before_script: 
-  - npm install concurrently
+script: |
+  npm run serve &
+  npm test
 notifications:
 email:
   recipients:
